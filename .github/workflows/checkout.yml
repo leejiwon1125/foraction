@@ -5,5 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: ls -al
-      - uses: actions/checkout@v3/changes
+      - uses: actions/checkout@v3
+        with:
+          path: changes
       - run: ls -al
