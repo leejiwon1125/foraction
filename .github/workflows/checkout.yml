@@ -6,8 +6,6 @@ jobs:
     steps:
       - run: ls -al
       - uses: actions/checkout@v3
-        with:
-          path: our-source/changes
       - run: ls -al
-      - run: ls -al our-source
-      - run: ls -al our-source/changes
+      - run: ls -al our-source/
+      - run: ls -al our-source/changes/
