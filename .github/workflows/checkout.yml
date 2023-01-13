@@ -1,6 +1,5 @@
 name: Our Workflow
 on: 
-  push:
   pull_request:
   
 defaults:
