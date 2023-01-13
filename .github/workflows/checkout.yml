@@ -14,4 +14,5 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: ls -al
-    - run: echo The Title of your PR is ${{ github.event.pull_request.title }}
+    - run: echo The Title of your PR is ${{ github.event.pull_request.number }}
+    #- run: python ./dowork.py github.event.pull_request.title github.event.pull_request.number
