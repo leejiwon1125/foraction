@@ -9,4 +9,5 @@ jobs:
         with:
           path: our-source/changes
       - run: ls -al
+      - run: ls -al our-source
       - run: ls -al our-source/changes
