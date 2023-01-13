@@ -9,3 +9,6 @@ jobs:
           path: fetchhere
           repository: leejiwon1125/hello-world
       - run: ls
+      - run: ls
+        working-directory: ./fetchhere
+        
