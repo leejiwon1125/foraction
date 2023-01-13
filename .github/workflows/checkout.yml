@@ -1,11 +1,17 @@
 name: Our Workflow
 on: push
+
+defaults:
+ run:
+  working-directory: ./changes
+
 jobs:
-  checkout:
+  jobjobnamename:
     runs-on: ubuntu-latest
+    
+    env:
+      working-directory: ./changes
+      
     steps:
-      - run: ls -al
       - uses: actions/checkout@v3
-      - name: asdf
-        working-directory: ./changes
       - run: ls -al
