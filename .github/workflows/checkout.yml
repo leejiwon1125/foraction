@@ -1,14 +1,14 @@
 name: Our Workflow
 on: push
+
+defaults:
+  run:
+    working-directory: ./changes
+
 jobs:
-  checkout:
+  jobjobnamename:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-        with:
-          path: fetchhere
-          repository: leejiwon1125/hello-world
-      - run: ls
-      - run: ls
-        working-directory: ./fetchhere
-        
+    - uses: actions/checkout@v3
+    - run: ls -al
