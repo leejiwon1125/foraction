@@ -1,6 +1,8 @@
 name: Our Workflow
-on: push
-
+on: 
+  push:
+  pull_request:
+  
 defaults:
   run:
     working-directory: ./changes
