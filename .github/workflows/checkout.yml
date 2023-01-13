@@ -8,10 +8,7 @@ defaults:
 jobs:
   jobjobnamename:
     runs-on: ubuntu-latest
-    
-    env:
-      working-directory: ./changes
-      
+        
     steps:
       - uses: actions/checkout@v3
       - run: ls -al
