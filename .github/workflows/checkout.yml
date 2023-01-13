@@ -1,14 +1,11 @@
 name: Our Workflow
 on: push
-
-defaults:
- run:
-  working-directory: ./changes
-
 jobs:
-  jobjobnamename:
+  checkout:
     runs-on: ubuntu-latest
-        
     steps:
       - uses: actions/checkout@v3
+        with:
+          path: our-source
       - run: ls -al
+      - run: ls -al our-source
