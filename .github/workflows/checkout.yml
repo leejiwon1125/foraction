@@ -17,6 +17,8 @@ jobs:
     - run: echo The Number of your PR is ${{ github.event.pull_request.number }}
     - run: python ./dowork.py ${{github.event.pull_request.title}} ${{github.event.pull_request.number}}
     - run: ls -al
-    - run: git branch
-    #- run: git commit -m"Automated report"
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Automated Change
+        
     
