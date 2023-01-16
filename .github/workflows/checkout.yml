@@ -1,7 +1,8 @@
 name: Our Workflow
 on: 
   pull_request:
-  
+permissions:
+  contents: write
 defaults:
   run:
     working-directory: ./changes
